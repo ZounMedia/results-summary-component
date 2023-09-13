@@ -7,15 +7,14 @@
 /* CSS Variables */
 :root {
   /* Primary Colors */
-  --light-red: hsl(0, 100%, 67%);
-  --orangey-yellow: hsl(39, 100%, 56%);
-  --green-teal: hsl(166, 100%, 37%);
-  --cobalt-blue: hsl(234, 85%, 45%);
-
+  --red-95-white: hsl(0, 83%, 95%);
+  --blue-95-white: hsl(252, 83%, 95%);
+  --yellow-95-white: hsl(40, 83%, 95%);
+  --green-95-white: hsl(168, 83%, 95%);
   /* Gradients */
 
   /* backgrounds */
-  --light-blue: #CAC9FF
+  --light-blue: #cac9ff;
   --light-slate-blue: hsl(252, 100%, 67%);
   --light-royal-blue: hsl(241, 81%, 54%);
 
@@ -27,7 +26,7 @@
   --white: hsl(0, 0%, 100%);
   --pale-blue: hsl(221, 100%, 96%);
   --light-lavender: hsl(241, 100%, 89%);
-  --dark-gray-blue: hsl(224, 30%, 27%);
+  --dark-navy: hsl(224, 30%, 27%);
 }
 
 /* Fonts */
@@ -63,7 +62,7 @@ footer {
 /* HEADER */
 
 header {
-  height: 50vh;
+  height: 45vh;
   background: linear-gradient(
     180deg,
     #75f 0%,
@@ -138,16 +137,120 @@ header .footing .description {
 /* MAIN */
 
 main {
-  border: 1px solid black;
-  height: 40vh;
+  height: 55vh;
+  width: 100%;
+  background-color: var(--white);
+}
+
+.summary {
+  height: 80%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.summary .heading {
+  width: 100%;
+  height: 15%;
+}
+
+.summary .tabs-container {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+}
+
+.summary .tabs-container .tab {
+  width: 315px;
+  height: 56px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2%;
+  border-radius: 12px;
+}
+
+.summary .tabs-container .tab.reaction {
+  background: var(
+    --red-95-white,
+    linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.95) 0%,
+      rgba(255, 255, 255, 0.95) 100%
+    ),
+    #f55
+  );
+}
+
+.summary .tabs-container .tab.memory {
+  background: var(
+    --yellow-95-white,
+    linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.95) 0%,
+      rgba(255, 255, 255, 0.95) 100%
+    ),
+    #ffb21e
+  );
+}
+
+.summary .tabs-container .tab.verbal {
+  background: var(
+    --green-95-white,
+    linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.95) 0%,
+      rgba(255, 255, 255, 0.95) 100%
+    ),
+    #00bb8f
+  );
+}
+
+.summary .tabs-container .tab.visual {
+  background: var(
+    --blue-95-white,
+    linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.95) 0%,
+      rgba(255, 255, 255, 0.95) 100%
+    ),
+    #1125d6
+  );
 }
 
 footer {
-  height: 10vh;
+  height: 20%;
+  width: 80%;
   justify-content: center;
 }
 
 footer button {
   width: 315px;
   height: 56px;
+  background: var(--dark-navy);
+  color: var(--white);
+  border-radius: 128px;
+}
+
+/* Media Queries */
+
+/* Tablet */
+
+@media (min-width: 768px) {
+  .summary,
+  footer {
+    width: 90%;
+  }
+  .summary .tabs-container .tab {
+    width: 100%;
+    height: 70px;
+  }
+
+  footer button {
+    width: 100%;
+    height: 70px;
+  }
 }
