@@ -48,3 +48,117 @@
 body {
   font-size: 18px;
 }
+
+.container,
+header,
+main,
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+/* HEADER */
+
+header {
+  height: 50vh;
+  background-image: linear-gradient(
+    180deg,
+    hsl(252deg 100% 63%) 0%,
+    hsl(252deg 99% 63%) 3%,
+    hsl(251deg 99% 63%) 7%,
+    hsl(251deg 98% 62%) 11%,
+    hsl(251deg 98% 62%) 15%,
+    hsl(250deg 97% 62%) 20%,
+    hsl(250deg 95% 61%) 26%,
+    hsl(249deg 94% 61%) 32%,
+    hsl(247deg 91% 59%) 40%,
+    hsl(245deg 88% 58%) 50%,
+    hsl(243deg 85% 56%) 63%,
+    hsl(241deg 81% 54%) 99%
+  );
+  border-radius: 0 0 10% 10%;
+  color: lightblue;
+}
+
+header .title,
+header .results,
+header .footing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+header .title {
+  justify-content: center;
+  height: 15%;
+}
+
+header .results {
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .results .score-container {
+  height: 140px;
+  width: 140px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(
+    180deg,
+    hsl(256deg 72% 46%) 0%,
+    hsl(254deg 72% 46%) 21%,
+    hsl(252deg 72% 46%) 30%,
+    hsl(251deg 72% 46%) 39%,
+    hsl(249deg 72% 46%) 46%,
+    hsl(248deg 72% 46%) 54%,
+    hsl(246deg 72% 46%) 61%,
+    hsl(245deg 72% 46%) 69%,
+    hsl(243deg 72% 46%) 79%,
+    hsl(241deg 72% 46%) 100%
+  );
+}
+
+header .results .score-container .score {
+  font-weight: 600;
+  font-size: 4rem;
+  color: var(--white);
+}
+
+header .results .score-container .total {
+  font-size: 4rem;
+  font-size: 0.8rem;
+}
+
+header .footing {
+  height: 35%;
+  justify-content: flex-start;
+}
+
+header .footing .title {
+  font-size: 1.5rem;
+  color: var(--white);
+}
+
+header .footing .description {
+  margin-top: 15px;
+  text-align: center;
+}
+
+/* MAIN */
+
+main {
+  border: 1px solid black;
+  height: 45vh;
+}
+
+footer {
+  height: 5vh;
+}
