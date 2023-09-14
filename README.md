@@ -1,6 +1,6 @@
-# Frontend Mentor - QR code component solution
+# Frontend Mentor - Results summary component solution
 
-This is a solution to the [Workit landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/workit-landing-page-2fYnyle5lu). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the [Results summary component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/results-summary-component-CE_K6s0maV). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -15,17 +15,17 @@ This is a solution to the [Workit landing page challenge on Frontend Mentor](htt
 
 ## Overview
 
-A Landing page for a company named Workit built with HTML and CSS.
+An HTML and CSS Results Summary Component
 
 ### Screenshot
 
-![](./assets/img/screenshot.jpeg)
+![](./assets/images/screenshot.jpeg)
 
 ### Links
 
 - Solution URL: https://www.frontendmentor.io/solutions/responsive-landing-page-using-css-flexbox-EvGdqKkGqN
-- Live Site URL: https://workit-taupe.vercel.app/
-- GitHub Repo: https://github.com/ZounMedia/workit
+- Live Site URL: https://results-summary-component-ebon-xi.vercel.app/
+- GitHub Repo: https://github.com/ZounMedia/results-summary-component
 
 ## My process
 
@@ -38,7 +38,7 @@ A Landing page for a company named Workit built with HTML and CSS.
 
 ### What I learned
 
-I learned how to create a landing page using HTML and CSS. I learned about the clip-path css property for adding cool shapes to the bottom of sections.
+I learned a lot about linear gradients and how to use them.
 
 ### Continued development
 
@@ -46,7 +46,7 @@ I would like to focus on my project setup for future projects. Regular css is ok
 
 ### Useful resources
 
-- https://bennettfeely.com/clippy/ - Clip-path generator for the rounded bottomes for each section
+- https://www.joshwcomeau.com/gradient-generator/ - CSS Gradients Generator
 
 ## Author
 

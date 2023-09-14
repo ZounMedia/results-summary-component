@@ -174,7 +174,6 @@ main {
 
 .summary .tabs-container .tab {
   width: 100%;
-  max-width: 315px;
   height: 56px;
   display: flex;
   justify-content: space-between;
@@ -305,7 +304,7 @@ footer button {
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 900px) {
   body {
     background-color: var(--pale-blue);
   }
@@ -317,6 +316,7 @@ footer button {
     max-width: 736px;
     max-height: 512px;
     background-color: var(--white);
+    border-radius: 32px;
   }
 
   header,
@@ -349,5 +349,22 @@ footer button {
 
   .summary .heading {
     font-size: 1.5rem;
+  }
+
+  footer button {
+    height: 56px;
+  }
+
+  footer button:hover {
+    cursor: pointer;
+    background: linear-gradient(
+      180deg,
+      #75f 0%,
+      #6943ff 0.01%,
+      #6341fd 9.57%,
+      #583cf9 28.9%,
+      #2f2ce9 100%
+    );
+    transition: all 0.3s ease-in-out;
   }
 }
