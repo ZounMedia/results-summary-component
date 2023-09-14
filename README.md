@@ -23,7 +23,7 @@ An HTML and CSS Results Summary Component
 
 ### Links
 
-- Solution URL: https://www.frontendmentor.io/solutions/responsive-landing-page-using-css-flexbox-EvGdqKkGqN
+- Solution URL: https://www.frontendmentor.io/solutions/css-gradients-flexbox-a2hKCWTai5
 - Live Site URL: https://results-summary-component-ebon-xi.vercel.app/
 - GitHub Repo: https://github.com/ZounMedia/results-summary-component
 
