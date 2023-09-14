@@ -62,7 +62,7 @@ footer {
 /* HEADER */
 
 header {
-  height: 45vh;
+  height: 40vh;
   background: linear-gradient(
     180deg,
     #75f 0%,
@@ -91,10 +91,9 @@ header .title {
 }
 
 header .results {
-  height: 50%;
+  height: 55%;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 header .results .score-container {
@@ -106,6 +105,7 @@ header .results .score-container {
   justify-content: center;
   align-items: center;
   background-image: url(./assets/images/background.svg);
+  background-size: cover;
 }
 
 header .results .score-container .score {
@@ -120,12 +120,13 @@ header .results .score-container .total {
 }
 
 header .footing {
-  height: 35%;
-  justify-content: flex-start;
+  height: 30%;
+  padding: 10%;
+  justify-content: space-around;
 }
 
 header .footing .title {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   color: var(--white);
 }
 
@@ -137,7 +138,7 @@ header .footing .description {
 /* MAIN */
 
 main {
-  height: 55vh;
+  height: 60vh;
   width: 100%;
   background-color: var(--white);
 }
@@ -153,12 +154,14 @@ main {
 
 .summary .heading {
   width: 100%;
-  height: 15%;
+  height: 35%;
+  display: flex;
+  align-items: center;
 }
 
 .summary .tabs-container {
   width: 100%;
-  height: 80%;
+  height: 65%;
   display: flex;
   justify-content: center;
 }
@@ -240,6 +243,31 @@ footer button {
 /* Tablet */
 
 @media (min-width: 768px) {
+  header .title {
+    height: 25%;
+    font-size: 1.5rem;
+  }
+
+  header .results {
+    height: 50%;
+  }
+
+  header .results .score-container {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+  }
+
+  header .footing {
+    height: 25%;
+    width: 65%;
+    justify-content: space-around;
+  }
+
+  header .footing .title {
+    font-size: 1.7rem;
+  }
+
   .summary,
   footer {
     width: 90%;
